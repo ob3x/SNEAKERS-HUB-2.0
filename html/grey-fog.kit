@@ -10,31 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
-    <nav class="nav">
-    <div class="wrapper nav-box">
-        <a href="index.html" class="nav-box__title">Sneakers <span class="nav-box__title-text">HUB</span></a>
-        <ul class="nav-box__list">
-            <a href="#" class="nav-box__list-style">
-                <li class="nav-box__list-item nav-box__list-item--heart"></li>
-            </a>
-            <a href="#" class="nav-box__list-style">
-                <li class="nav-box__list-item nav-box__list-item--basket"></li>
-            </a>
-            <a href="#" class="nav-box__list-style">
-                <li class="nav-box__list-item nav-box__list-item--account"></li>
-            </a>
-        </ul>
-    </div>
-</nav>
-<section class="notification">
-    <div class="wrapper">
-        <p class="notification-text">Wyprzedaż magazynowa, wysyłka w 12h!</p>
-    </div>
-</section>
+    <!-- @include 'nav' -->
     <section class="item">
         <div class="wrapper item-box">
             <img src="dist/img/grey-fog.png" alt="" class="item-box__left">
@@ -57,19 +38,22 @@
                     </button>
                     <ul class="item-box__right-sizes-box">
                         <li class="item-box__right-sizes-box--item">
-                            <p class="item-box__right-sizes-box--item-text">36 eu | 22 cm | 5.5w us</p>
+                            Wybierz rozmiar
                         </li>
                         <li class="item-box__right-sizes-box--item">
-                            <p class="item-box__right-sizes-box--item-text">36 eu | 22 cm | 5.5w us</p>
+                            38 eu | 23.5 cm | 5.5 us
                         </li>
                         <li class="item-box__right-sizes-box--item">
-                            <p class="item-box__right-sizes-box--item-text">36 eu | 22 cm | 5.5w us</p>
+                            39 eu | 24.5 cm | 6.5 us
                         </li>
                         <li class="item-box__right-sizes-box--item">
-                            <p class="item-box__right-sizes-box--item-text">36 eu | 22 cm | 5.5w us</p>
+                            40 eu | 25 cm | 7 us
                         </li>
                         <li class="item-box__right-sizes-box--item">
-                            <p class="item-box__right-sizes-box--item-text">36 eu | 22 cm | 5.5w us</p>
+                            41 eu | 26 cm | 8 us
+                        </li>
+                        <li class="item-box__right-sizes-box--item">
+                            42 eu | 26.5 cm | 8.5 us
                         </li>
                     </ul>
                 </div>
@@ -82,37 +66,47 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-    <div class="footer-top">
-        <div class="wrapper">
-            <h3 class="footer-top__title">Zapoznaj się z naszymi regulaminami i social mediami</h3>
-            <div class="footer-top__btns">
-                <ul class="footer-top__btns-list">
-                    <li class="footer-top__btns-list--item"> <a href="#" class="footer-top__btns-item">Regulamin</a>
-                    </li>
-                    <li class="footer-top__btns-list--item"> <a href="#" class="footer-top__btns-item">Polityka
-                            prywatności</a></li>
-                    <li class="footer-top__btns-list--item"> <a href="#" class="footer-top__btns-item">Polityka
-                            zwrotów</a></li>
-                </ul>
-                <ul class="footer-top__btns-list">
-                    <li class="footer-top__btns-list--item"> <a href="#" class="footer-top__btns-item">Kontakt</a></li>
-                    <li class="footer-top__btns-list--item"> <a href="#" class="footer-top__btns-item">FAQ</a></li>
-                </ul>
+    <section class="shop" id="shop">
+        <h2 class="shop-title">Przeglądaj inne modele</h2>
+        <div class="shop-box">
+            <div class="shop-box__shoes">
+                <div class="shop-box__heart"></div>
+                <a class="shop-box__item" href="item.html">
+                    <img class="shop-box__item-top" src="dist/img/panda.png" alt="nike dunk low">
+                    <div class="shop-box__item-bottom">
+                        <h3 class="shop-box__item-bottom--title">Nike</h3>
+                        <p class="shop-box__item-bottom--text">Dunk Low "Panda"</p>
+                        <p class="shop-box__item-bottom--price">449 zł</p>
+                    </div>
+                </a>
             </div>
-            <div class="footer-top__box">
-                <a href="index.html" class="nav-box__title">Sneakers <span class="nav-box__title-text">HUB</span></a>
-                <div class="footer-top__icons">
-                    <a class="footer-top__icons-item footer-top__icons-item--instagram" href="#"></a>
-                    <a class="footer-top__icons-item footer-top__icons-item--tiktok" href="#"></a>
-                </div>
+            <div class="shop-box__shoes">
+                <div class="shop-box__heart"></div>
+                <a class="shop-box__item" href="item.html">
+                    <img class="shop-box__item-top" src="dist/img/cacao.png" alt="nike dunk low">
+                    <div class="shop-box__item-bottom">
+                        <h3 class="shop-box__item-bottom--title">Nike</h3>
+                        <p class="shop-box__item-bottom--text">Dunk Low 
+                            "Cacao Wow"</p>
+                        <p class="shop-box__item-bottom--price">449 zł</p>
+                    </div>
+                </a>
+            </div>
+            <div class="shop-box__shoes">
+                <div class="shop-box__heart"></div>
+                <a class="shop-box__item" href="item.html">
+                    <img class="shop-box__item-top" src="dist/img/university-red.png" alt="nike dunk low">
+                    <div class="shop-box__item-bottom">
+                        <h3 class="shop-box__item-bottom--title">Nike</h3>
+                        <p class="shop-box__item-bottom--text">Dunk Low "University Red"</p>
+                        <p class="shop-box__item-bottom--price">459 zł</p>
+                    </div>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p class="footer-bottom__text">© <span class="footer-bottom__year">2024</span> | SneakersHub.pl</p>
-    </div>
-</footer>
+    </section>
+    <!-- @include 'footer' -->
+    <script src="dist/js/loop.min.js"></script>
     <script src="dist/js/index.min.js"></script>
 </body>
 

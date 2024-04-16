@@ -148,7 +148,7 @@ body {
 
 .shop {
 	padding: 6em 0;
-	scroll-margin-top: 6.5em;
+	scroll-margin-top: 5.3em;
 	&-title {
 		padding: 0 1em;
 		font-size: 3rem;
@@ -187,7 +187,7 @@ body {
 			&-top {
 				width: 100%;
 				object-fit: cover;
-				margin-bottom: 5em;
+				padding-bottom: 5em;
 				transition: transform 0.3s;
 			}
 			&-bottom {
@@ -209,14 +209,15 @@ body {
 }
 
 .item {
-	padding: 10em 0;
+	padding: 10em 4em;
 	&-box {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 		&__left {
-			width: 55em;
-			margin-right: 8em;
+			width: 30em;
+			margin: auto;
 		}
 		&__right {
 			width: 100%;
@@ -240,7 +241,7 @@ body {
 			&-text {
 				color: $light-grey;
 				font-size: 1.5rem;
-				line-height: 2em;
+				line-height: 1.5em;
 				letter-spacing: 0.05em;
 			}
 			&-btns {
@@ -255,6 +256,7 @@ body {
 					text-transform: uppercase;
 					cursor: pointer;
 					&-heart {
+						display: none;
 						margin-left: 0.5em;
 						background-image: url(../../src/img/svg/heart-grey.svg);
 						background-size: cover;
@@ -262,7 +264,7 @@ body {
 						height: 1.5em;
 					}
 					&:nth-child(1) {
-						width: 75%;
+						width: 47.5%;
 						background-color: $grey;
 						color: $light-white;
 						transition: color 0.2s, background-color 0.2s;
@@ -273,8 +275,9 @@ body {
 					}
 					&:nth-child(2) {
 						display: flex;
+						justify-content: center;
 						align-items: center;
-						width: 20%;
+						width: 47.5%;
 						background-color: $light-white;
 						color: $grey;
 						transition: color 0.2s, background-color 0.2s, background-image 0.3s;
@@ -324,27 +327,31 @@ body {
 						background-size: cover;
 						width: 1.5em;
 						height: 1.5em;
-						transition: transform .5s;
+						transition: transform 0.5s;
 					}
 				}
 				&-box {
 					position: absolute;
-					left: -0.3%;
-					background-color: $light-white;
-					width: 100.7%;
+					left: 50%;
+					transform: translate(-50%);
+					width: 100.4%;
 					max-height: 0;
 					border: 0.2em solid $grey;
 					border-top: none;
 					transition: max-height 0.5s;
+					background-color: $light-white;
 					overflow: hidden;
 					cursor: pointer;
 					&--item {
 						display: block;
 						padding: 1em 2em;
 						border-top: 0.2em solid $grey;
-						transition: background-color .3s;
+						transition: background-color 0.3s;
 						&:hover {
 							background-color: $white;
+						}
+						&:nth-child(1) {
+							text-transform: capitalize;
 						}
 					}
 				}
@@ -477,6 +484,19 @@ body {
 			}
 		}
 	}
+	.item-box {
+		&__left {
+			width: 45em;
+		}
+	}
+	.item-box__right-btns--item {
+		&:nth-child(1) {
+			width: 75%;
+		}
+		&:nth-child(2) {
+			width: 20%;
+		}
+	}
 }
 @media (min-width: 768px) {
 	.header-text {
@@ -486,6 +506,7 @@ body {
 		}
 	}
 	.shop {
+		scroll-margin-top: 6.5em;
 		&-title {
 			font-size: 6rem;
 		}
@@ -517,4 +538,31 @@ body {
 	}
 }
 @media (min-width: 992px) {
+	.item-box {
+		flex-direction: row;
+		&__left {
+			margin-right: 4em;
+		}
+		&__right-sizes-box {
+			width: 100.7%;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.item-box {
+		&__left {
+			width: 55em;
+			margin-right: 8em;
+		}
+		&__right {
+			&-text {
+				line-height: 2em;
+			}
+		}
+	}
+}
+@media (min-width: 1290px) {
+	.item-box__right-btns--item-heart {
+		display: block;
+	}
 }
