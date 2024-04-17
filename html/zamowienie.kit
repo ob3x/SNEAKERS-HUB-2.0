@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Hub - Oficjalna strona sklepu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <section class="order">
+        <h1 class="shop-title basket-title">Zamówienie</h1>
+        <div class="wrapper order-box">
+            <div class="order-left">
+                <h2 class="order-left__title">Dane płatności</h2>
+                <div class="order-line order-line__dark"></div>
+                <p class="order-left__text">* Pola wymagane</p>
+                <div class="order-data">
+                    <div class="order-data__name">
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Imię *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Nazwisko *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                    </div>
+                    <div class="order-data__longbox">
+                        <label for="text" class="order-data__box-name">Adres e-mail *</label>
+                        <input type="text" class="order-data__box-text">
+                        <div class="order-data__box-checkbox">
+                            <input type="checkbox" class="order-data__box-checkbox--input">
+                            <p class="order-data__box-checkbox--text">Chcę dostawać powiadomienia o promocjach,
+                                nowościach i aktualizacjach zapasów.</p>
+                        </div>
+                    </div>
+                    <div class="order-data__longbox">
+                        <label for="text" class="order-data__box-name">Kraj / Region *</label>
+                        <select type="text" class="order-data__box-text">
+                            <option value="1" class="order-data__box-text--option">Polska</option>
+                            <option value="1" class="order-data__box-text--option">Niemcy</option>
+                            <option value="1" class="order-data__box-text--option">Czechy</option>
+                            <option value="1" class="order-data__box-text--option">Słowacja</option>
+                            <option value="1" class="order-data__box-text--option">Portugalia</option>
+                            <option value="1" class="order-data__box-text--option">Belgia</option>
+                            <option value="1" class="order-data__box-text--option">Holandia</option>
+                        </select>
+                    </div>
+                    <div class="order-data__name">
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Miasto *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Ulica *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                    </div>
+                    <div class="order-data__name">
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Nr mieszkania *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                        <div class="order-data__box">
+                            <label for="text" class="order-data__box-name">Kod pocztowy *</label>
+                            <input type="text" class="order-data__box-text">
+                        </div>
+                    </div>
+                    <div class="order-data__longbox">
+                        <label for="text" class="order-data__box-name">Numer telefonu *</label>
+                        <input type="text" class="order-data__box-text">
+                    </div>
+                </div>
+            </div>
+            <div class="order-right">
+                <h2 class="order-left__title order-left__title-dark">Twoje zamówienie</h2>
+                <div class="order-line"></div>
+                <div class="order-right__box">
+                    <div class="order-right__itembox">
+                        <div class="order-right__item">
+                            <div class="order-right__item-box"><img src="dist/img/grey-fog.png" alt="grey-fog"
+                                    class="order-right__item-img">
+                                <p class="order-right__item-text">Nike Dunk Low "Grey Fog" | 38 eu | 23.5 cm | 5.5 us
+                                </p>
+                            </div>
+                            <p class="order-right__item-price">449 zł</p>
+                        </div>
+                        <div class="order-right__item">
+                            <div class="order-right__item-box"><img src="dist/img/cacao.png" alt="grey-fog"
+                                    class="order-right__item-img">
+                                <p class="order-right__item-text">Nike Dunk Low "Cacao Wow" | 38 eu | 23.5 cm | 5.5 us
+                                </p>
+                            </div>
+                            <p class="order-right__item-price">449 zł</p>
+                        </div>
+                    </div>
+                    <div class="order-line"></div>
+                    <div class="order-right__place">
+                        <p class="order-right__place-text">Kwota</p>
+                        <p class="order-right__place-text">898 zł</p>
+                    </div>
+                    <div class="order-line"></div>
+                    <div class="order-right__secoundplace">
+                        <p class="order-right__place-text">Wysyłka</p>
+                        <div class="order-right__place-box">
+                            <button class="order-right__place-box--item">
+                                <p>Paczkomat InPost</p>
+                                <p class="order-right__place-box--item-price">13,00 zł</p>
+                            </button>
+                            <button class="order-right__place-box--item">
+                                <p>Kurier DPD</p>
+                                <p class="order-right__place-box--item-price">17,00 zł</p>
+                            </button>
+                            <button class="order-right__place-box--item">
+                                <p>Kurier InPost</p>
+                                <p class="order-right__place-box--item-price">17,00 zł</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="order-line"></div>
+                    <div class="order-right__place">
+                        <p class="order-right__place-text">Łącznie</p>
+                        <div class="order-right__place-vatbox">
+                            <p class="order-right__place-text">898 zł</p>
+                            <p class="order-right__place-vat">(zawiera 159 PLN VAT)</p>
+                        </div>
+                    </div>
+                    <div class="order-line"></div>
+                    <div class="order-right__polity">
+                        <p class="order-right__polity-text">Twoje dane osobowe będą użyte do przetworzenia zamówienia,
+                            ułatwienia korzystania ze strony internetowej oraz innych celów opisanych w naszej polityka
+                            prywatności.</p>
+                        <div class="order-right__polity-box">
+                            <input type="checkbox" class="order-right__polity-box--input">
+                            <p class="order-right__polity-box--text">Przeczytałem/am i akceptuję regulamin *</p>
+                        </div>
+                        <div class="order-right__polity-box">
+                            <input type="checkbox" class="order-right__polity-box--input">
+                            <p class="order-right__polity-box--text">Zasubskrybuj nasz newsletter</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="order-right__btn">Przejdź do płatności</a>
+            </div>
+        </div>
+    </section>
+    <!-- @include 'footer' -->
+    <script src="dist/js/order.min.js"></script>
+    <script src="dist/js/index.min.js"></script>
+</body>
+
+</html>
