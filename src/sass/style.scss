@@ -291,16 +291,14 @@ body {
 					}
 				}
 			}
-			&-table {
-				margin: 0.7em 0 2em;
+			&-sku {
+				margin-top: 1em;
 				font-size: 1.3rem;
-				font-weight: bold;
-				text-decoration: underline;
-				cursor: pointer;
+				font-weight: 600;
 			}
 			&-sizes {
 				position: relative;
-				margin-top: 4em;
+				margin: 4em 0 2em;
 				border: 0.2em solid $grey;
 				font-weight: bold;
 				font-size: 1.4rem;
@@ -361,7 +359,7 @@ body {
 }
 
 .basket {
-	padding: 10em 4em;
+	padding: 10em .5em;
 	&-title {
 		margin-bottom: 1em;
 	}
@@ -485,10 +483,11 @@ body {
 	}
 }
 .order {
-	padding: 10em 4em;
+	padding: 10em .5em;
 	&-box {
 		display: flex;
 		flex-direction: column;
+		align-items: left;
 	}
 	&-line {
 		margin: 1em 0;
@@ -542,6 +541,7 @@ body {
 				border-radius: 0.5em;
 				border: 0.1em solid $light-grey;
 				width: 100%;
+				background-color: $light-white;
 			}
 			&-checkbox {
 				margin-top: 2em;
@@ -834,6 +834,9 @@ body {
 			}
 		}
 	}
+	.basket {
+		padding: 10em 4em;
+	}
 	.shop {
 		padding: 6em 4em 20em;
 		&-title {
@@ -861,6 +864,10 @@ body {
 		}
 	}
 	.order {
+		padding: 10em 4em;
+		&-box {
+			align-items: center;
+		}
 		&-left {
 			width: 70%;
 			&__title {
@@ -958,7 +965,7 @@ body {
 			width: 65%;
 			&__item {
 				padding: 0.5em 2em;
-				margin-bottom: 5em;
+				margin-bottom: 3em;
 			}
 			&__box {
 				&-title {
