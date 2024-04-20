@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneakers Hub - Oficjalna strona sklepu</title>
+    <title>Logowanie | SneakersHub.pl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,7 +46,57 @@
     </div>
 </header>
 <div class="overlay active"></div>
-    <section class="login-section">
+    <section class="login">
+        <h1 class="shop-title login-title">Logowanie i Rejestracja</h1>
+        <div class="wrapper login-box">
+            <div class="login-left login-box__item">
+                <h2 class="login-box__title">Zaloguj się</h2>
+                <p class="login-box__text">Zaloguj się używając emailu i hasła</p>
+                <div class="login-input">
+                    <label for="email" class="login-input__title">Adres e-mail</label>
+                    <input type="email" class="login-input__item loginEmail">
+                </div>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item firstPassword">
+                        <div class="login-input__password-eye firstEye"></div>
+                    </div>
+                </div>
+                <a class="login-forget" href="zapomnialem-hasla.html">Zapomnialeś hasła?</a>
+                <p class="loginError login-error"></p>
+                <button class="login-btn loginBtn">Zaloguj się</button>
+            </div>
+            <div class="login-right login-box__item">
+                <h2 class="login-box__title">Zarejestruj się</h2>
+                <p class="login-box__text">Kliknij przycisk żeby stworzyć konto</p>
+                <div class="login-input">
+                    <label for="name" class="login-input__title">Imię i nazwisko</label>
+                    <input type="name" class="login-input__item nameSurname">
+                </div>
+                <div class="login-input">
+                    <label for="email" class="login-input__title ">Adres e-mail</label>
+                    <input type="email" class="login-input__item registerEmail">
+                </div>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item secoundPassword">
+                        <div class="login-input__password-eye secoundEye"></div>
+                    </div>
+                </div>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Powtórz Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item thirdPassword">
+                        <div class="login-input__password-eye thirdEye"></div>
+                    </div>
+                </div>
+                <p class="registerError login-error"></p>
+                <button class="login-btn login-btn__secound registerBtn">Zarejestruj się</button>
+            </div>
+        </div>
+        </div>
     </section>
     <footer class="footer">
     <div class="footer-top">

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmień hasło | SneakersHub.pl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <section class="login">
+        <h1 class="shop-title login-title">Zmień hasło</h1>
+        <div class="wrapper login-box">
+            <div class="login-left login-box__item">
+                <h2 class="login-box__title">Zresetuj swoje hasło</h2>
+                <p class="login-box__text">Ustaw swoje nowe hasło</p>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item firstPassword">
+                        <div class="login-input__password-eye firstEye"></div>
+                    </div>
+                </div>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Powtórz Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item secoundPassword">
+                        <div class="login-input__password-eye secoundEye"></div>
+                    </div>
+                </div>
+                <p class="login-error passwordError"></p>
+                <button class="login-btn passwordBtn">Ustaw nowe hasło</button>
+            </div>
+    </section>
+    <!-- @include 'footer' -->
+    <script src="dist/js/newPassword.min.js"></script>
+    <script src="dist/js/index.min.js"></script>
+    <script src="dist/js/footer.min.js"></script>
+</body>
+
+</html>

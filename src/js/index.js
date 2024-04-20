@@ -3,6 +3,7 @@ const heartBtnX = document.querySelector('.menu-title__icon');
 const heartMenu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
 
+
 const heartPopup = () => {
 	heartMenu.classList.toggle('menu-active');
 	overlay.classList.toggle('active');

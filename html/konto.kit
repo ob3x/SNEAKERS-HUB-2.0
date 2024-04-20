@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto | SneakersHub.pl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <header class="panel">
+        <button class="panel-btn">
+            <div class="panel-btn__bars"></div>
+        </button>
+        <div class="panel-left">
+            <ul class="panel-left__list">
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="panel.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-house"></div> Pulpit
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="zamowienia.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-shoppingbag"></div>
+                        Zamówienia
+                    </a></li>
+                <li class="panel-left__list-item"><a
+                        class="panel-left__list-item-style panel-left__list-item-style--active3" href="konto.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-account"></div>Konto
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="index.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-arrow"></div>Wyloguj się
+                    </a></li>
+            </ul>
+        </div>
+        <div class="panel-right">
+            <h2 class="panel-right__title">Konto</h2>
+            <div class="panel-account">
+                <div class="panel-account__box">
+                    <div class="panel-account__item">
+                        <label for="name" class="panel-account__item-name">Imię</label>
+                        <input type="name" class="panel-account__item-input">
+                    </div>
+                    <div class="panel-account__item">
+                        <label for="name" class="panel-account__item-name">Nazwisko</label>
+                        <input type="name" class="panel-account__item-input">
+                    </div>
+                </div>
+                <div class="panel-account__secoundbox">
+                    <label for="email" class="panel-account__item-name">Adres E-mail</label>
+                    <input type="email" class="panel-account__item-input">
+                </div>
+                <h3 class="panel-account__subtitle">Zmień hasło</h3>
+                <div class="panel-account__secoundbox">
+                    <label for="password" class="panel-account__item-name">Aktualne hasło</label>
+                    <input type="password" class="panel-account__item-input">
+                </div>
+                <div class="panel-account__box">
+                    <div class="panel-account__item">
+                        <label for="password" class="panel-account__item-name">Nowe Hasło</label>
+                        <input type="password" class="panel-account__item-input">
+                    </div>
+                    <div class="panel-account__item">
+                        <label for="password" class="panel-account__item-name">Potwierdź Hasło</label>
+                        <input type="password" class="panel-account__item-input">
+                    </div>
+                </div>
+                <p class="panel-error"></p>
+                <button class="panel-account__btn">Zapisz zmiany</button>
+            </div>
+        </div>
+    </header>
+    <!-- @include 'footer' -->
+    <script src="dist/js/account.min.js"></script>
+    <script src="dist/js/footer.min.js"></script>
+</body>
+
+</html>

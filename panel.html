@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koszyk | SneakersHub.pl</title>
+    <title>Panel | SneakersHub.pl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,66 +46,35 @@
     </div>
 </header>
 <div class="overlay active"></div>
-    <section class="basket">
-        <h1 class="shop-title basket-title">Koszyk</h1>
-        <div class="wrapper basket-box">
-            <div class="basket-left">
-                <div class="basket-left__item">
-                    <img src="dist/img/grey-fog.png" alt="grey-fog" class="basket-left__img">
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">NIKE</h3>
-                        <p class="basket-left__box-text">Dunk Low "Grey Fog"</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Cena</h3>
-                        <p class="basket-left__box-text"><span class="price">449</span> zł</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Rozmiar</h3>
-                        <p class="basket-left__box-text">38 eu | 23.5 cm | 5.5 us</p>
-                    </div>
-                    <div class="basket-left__x"></div>
-                </div>
-                <div class="basket-left__item">
-                    <img src="dist/img/cacao.png" alt="grey-fog" class="basket-left__img">
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">NIKE</h3>
-                        <p class="basket-left__box-text">Dunk Low "Cacao Wow"</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Cena</h3>
-                        <p class="basket-left__box-text"><span class="price">449</span> zł</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Rozmiar</h3>
-                        <p class="basket-left__box-text">38 eu | 23.5 cm | 5.5 us</p>
-                    </div>
-                    <div class="basket-left__x"></div>
-                </div>
-            </div>
-            <div class="basket-right">
-                <h2 class="basket-right__title">Podsumowanie</h2>
-                <div class="basket-right__box">
-                    <p class="basket-right__box-text">Razem</p>
-                    <p class="basket-right__box-text count">0 zł</p>
-                </div>
-                <div class="basket-right__box">
-                    <p class="basket-right__box-text">Kod rabatowy</p>
-                    <p class="basket-right__box-text">0 zł</p>
-                </div>
-                <div class="basket-right__rabat">
-                    <input type="text" class="basket-right__rabat-input" placeholder="Wpisz kod rabatowy">
-                    <button class="basket-right__rabat-btn">Dodaj</button>
-                </div>
-                <div class="basket-right__line"></div>
-                <div class="basket-right__price">
-                    <p class="basket-right__title">suma</p>
-                    <p class="basket-right__price-count"> 0 zł</p>
-                </div>
-                <a href="zamowienie.html" class="basket-right__btn">Przejdź Do Płatności</a>
+    <header class="panel">
+        <button class="panel-btn">
+            <div class="panel-btn__bars"></div>
+        </button>
+        <div class="panel-left">
+            <ul class="panel-left__list">
+                <li class="panel-left__list-item"><a
+                        class="panel-left__list-item-style panel-left__list-item-style--active" href="panel.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-house"></div> Pulpit
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="zamowienia.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-shoppingbag"></div>
+                        Zamówienia
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="konto.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-account"></div>Konto
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="index.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-arrow"></div>Wyloguj się
+                    </a></li>
+            </ul>
+        </div>
+        <div class="panel-right">
+            <h2 class="panel-right__title">Pulpit</h2>
+            <div class="panel-gui">
+
             </div>
         </div>
-    </section>
+    </header>
     <footer class="footer">
     <div class="footer-top">
         <div class="wrapper">
@@ -137,9 +106,8 @@
         <p class="footer-bottom__text">© <span class="footer-bottom__year">2024</span> | SneakersHub.pl</p>
     </div>
 </footer>
-    <script src="dist/js/shopping-bag.min.js"></script>
-    <script src="dist/js/index.min.js"></script>
     <script src="dist/js/footer.min.js"></script>
+    <script src="dist/js/account.min.js"></script>
 </body>
 
 </html>

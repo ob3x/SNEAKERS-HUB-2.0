@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koszyk | SneakersHub.pl</title>
+    <title>Zmień hasło | SneakersHub.pl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -46,65 +46,29 @@
     </div>
 </header>
 <div class="overlay active"></div>
-    <section class="basket">
-        <h1 class="shop-title basket-title">Koszyk</h1>
-        <div class="wrapper basket-box">
-            <div class="basket-left">
-                <div class="basket-left__item">
-                    <img src="dist/img/grey-fog.png" alt="grey-fog" class="basket-left__img">
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">NIKE</h3>
-                        <p class="basket-left__box-text">Dunk Low "Grey Fog"</p>
+    <section class="login">
+        <h1 class="shop-title login-title">Zmień hasło</h1>
+        <div class="wrapper login-box">
+            <div class="login-left login-box__item">
+                <h2 class="login-box__title">Zresetuj swoje hasło</h2>
+                <p class="login-box__text">Ustaw swoje nowe hasło</p>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item firstPassword">
+                        <div class="login-input__password-eye firstEye"></div>
                     </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Cena</h3>
-                        <p class="basket-left__box-text"><span class="price">449</span> zł</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Rozmiar</h3>
-                        <p class="basket-left__box-text">38 eu | 23.5 cm | 5.5 us</p>
-                    </div>
-                    <div class="basket-left__x"></div>
                 </div>
-                <div class="basket-left__item">
-                    <img src="dist/img/cacao.png" alt="grey-fog" class="basket-left__img">
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">NIKE</h3>
-                        <p class="basket-left__box-text">Dunk Low "Cacao Wow"</p>
+                <div class="login-input">
+                    <label for="password" class="login-input__title">Powtórz Hasło</label>
+                    <div class="login-input__password">
+                        <input type="password" class="login-input__item secoundPassword">
+                        <div class="login-input__password-eye secoundEye"></div>
                     </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Cena</h3>
-                        <p class="basket-left__box-text"><span class="price">449</span> zł</p>
-                    </div>
-                    <div class="basket-left__box">
-                        <h3 class="basket-left__box-title">Rozmiar</h3>
-                        <p class="basket-left__box-text">38 eu | 23.5 cm | 5.5 us</p>
-                    </div>
-                    <div class="basket-left__x"></div>
                 </div>
+                <p class="login-error passwordError"></p>
+                <button class="login-btn passwordBtn">Ustaw nowe hasło</button>
             </div>
-            <div class="basket-right">
-                <h2 class="basket-right__title">Podsumowanie</h2>
-                <div class="basket-right__box">
-                    <p class="basket-right__box-text">Razem</p>
-                    <p class="basket-right__box-text count">0 zł</p>
-                </div>
-                <div class="basket-right__box">
-                    <p class="basket-right__box-text">Kod rabatowy</p>
-                    <p class="basket-right__box-text">0 zł</p>
-                </div>
-                <div class="basket-right__rabat">
-                    <input type="text" class="basket-right__rabat-input" placeholder="Wpisz kod rabatowy">
-                    <button class="basket-right__rabat-btn">Dodaj</button>
-                </div>
-                <div class="basket-right__line"></div>
-                <div class="basket-right__price">
-                    <p class="basket-right__title">suma</p>
-                    <p class="basket-right__price-count"> 0 zł</p>
-                </div>
-                <a href="zamowienie.html" class="basket-right__btn">Przejdź Do Płatności</a>
-            </div>
-        </div>
     </section>
     <footer class="footer">
     <div class="footer-top">
@@ -137,7 +101,7 @@
         <p class="footer-bottom__text">© <span class="footer-bottom__year">2024</span> | SneakersHub.pl</p>
     </div>
 </footer>
-    <script src="dist/js/shopping-bag.min.js"></script>
+    <script src="dist/js/newPassword.min.js"></script>
     <script src="dist/js/index.min.js"></script>
     <script src="dist/js/footer.min.js"></script>
 </body>
