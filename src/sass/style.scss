@@ -44,6 +44,19 @@ body {
 		&__list {
 			display: flex;
 			list-style-type: none;
+			&-style {
+				position: relative;
+				color: $black;
+				&--number {
+					position: absolute;
+					bottom: -0.2em;
+					right: 1.4em;
+					background-color: $white;
+					border-radius: 1.5em;
+					font-size: 1.1rem;
+					font-weight: bold;
+				}
+			}
 			&-item {
 				margin: 0 1.5em;
 				background-repeat: no-repeat;
@@ -72,6 +85,95 @@ body {
 		font-weight: bold;
 		font-size: 1.4rem;
 	}
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	padding: 3em 2em;
+	background-color: $white;
+	transform: translateX(100%);
+	transition: transform 0.3s;
+	z-index: 10000;
+	&-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__text {
+			font-size: 3rem;
+			color: $main-color;
+			font-weight: bold;
+		}
+		&__icon {
+			background-image: url(../../src/img/svg/x-blue.svg);
+			background-repeat: no-repeat;
+			width: 3em;
+			height: 3em;
+			cursor: pointer;
+		}
+	}
+	&-line {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		margin: 1em 0;
+		width: 80%;
+		height: 0.2em;
+		background-color: $main-color;
+	}
+	&-box {
+		margin-top: 5em;
+	}
+	&-item {
+		position: relative;
+		margin-bottom: 2em;
+		&__link {
+			color: $black;
+			text-decoration: none;
+		}
+		&__left {
+			display: flex;
+			align-items: center;
+		}
+		&__img {
+			width: 25%;
+			margin-right: 1.5em;
+		}
+		&__text {
+			font-size: 1.5rem;
+		}
+		&__price {
+			font-weight: bold;
+			font-size: 1.8rem;
+		}
+		&__x {
+			position: absolute;
+			top: 50%;
+			right: 3%;
+			transform: translate(0, -50%);
+			background-image: url(../../src/img/svg/x.svg);
+			width: 2em;
+			height: 2em;
+			cursor: pointer;
+		}
+	}
+}
+
+.menu-active {
+	transform: translate(0);
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1001;
+	overflow-y: hidden;
 }
 
 .header {
@@ -173,8 +275,12 @@ body {
 			background-repeat: no-repeat;
 			width: 3em;
 			height: 3em;
-			z-index: 100;
+			z-index: 10;
+			transition: transform 0.3s;
 			cursor: pointer;
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 		&__item {
 			color: $black;
@@ -359,7 +465,7 @@ body {
 }
 
 .basket {
-	padding: 10em .5em;
+	padding: 10em 0.5em;
 	&-title {
 		margin-bottom: 1em;
 	}
@@ -483,7 +589,7 @@ body {
 	}
 }
 .order {
-	padding: 10em .5em;
+	padding: 10em 0.5em;
 	&-box {
 		display: flex;
 		flex-direction: column;
@@ -723,6 +829,9 @@ body {
 .arrow-active {
 	transform: rotate(180deg);
 }
+.active {
+	display: none;
+}
 
 @keyframes rotate360 {
 	from {
@@ -816,9 +925,15 @@ body {
 			&__title {
 				font-size: 3rem;
 			}
-			&__list-item {
-				width: 3em;
-				height: 3em;
+			&__list {
+				&-item {
+					width: 3em;
+					height: 3em;
+				}
+				&-style--number {
+					font-size: 1.6rem;
+					right: 1em;
+				}
 			}
 		}
 	}
@@ -836,6 +951,9 @@ body {
 	}
 	.basket {
 		padding: 10em 4em;
+	}
+	.menu {
+		width: 40em;
 	}
 	.shop {
 		padding: 6em 4em 20em;

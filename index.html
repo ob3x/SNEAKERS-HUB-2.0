@@ -20,6 +20,7 @@
         <ul class="nav-box__list">
             <a href="#" class="nav-box__list-style">
                 <li class="nav-box__list-item nav-box__list-item--heart"></li>
+                <span class="nav-box__list-style--number"></span>
             </a>
             <a href="koszyk.html" class="nav-box__list-style">
                 <li class="nav-box__list-item nav-box__list-item--basket"></li>
@@ -35,7 +36,17 @@
         <p class="notification-text">Wyprzedaż magazynowa, wysyłka w 12h!</p>
     </div>
 </section>
-    <header class="header">
+<header class="menu">
+    <div class="menu-title">
+        <h2 class="menu-title__text">Polubione</h2>
+        <div class="menu-title__icon"></div>
+    </div>
+    <div class="menu-line"></div>
+    <div class="menu-box">
+    </div>
+</header>
+<div class="overlay active"></div>
+    <section class="header">
         <div class="header-hero"></div>
         <div class="wrapper header-box">
             <p class="header-text">Kup swoje <span class="header-text__style">wymarzone</span></p>
@@ -43,12 +54,12 @@
             <p class="header-text">w <span class="header-text__style">najniższej cenie</span> na rynku</p>
             <a href="#shop" class="header-text__btn">Przeglądaj</a>
         </div>
-    </header>
+    </section>
     <section class="shop" id="shop">
         <h2 class="shop-title">Wybierz swoją ulubioną kolorystykę</h2>
         <div class="shop-box">
             <div class="shop-box__shoes">
-                <div class="shop-box__heart"></div>
+                <div class="shop-box__heart grey-fog"></div>
                 <a class="shop-box__item" href="grey-fog.html">
                     <img class="shop-box__item-top" src="dist/img/grey-fog.png" alt="nike dunk low">
                     <div class="shop-box__item-bottom">
@@ -59,7 +70,7 @@
                 </a>
             </div>
             <div class="shop-box__shoes">
-                <div class="shop-box__heart"></div>
+                <div class="shop-box__heart panda"></div>
                 <a class="shop-box__item" href="panda.html">
                     <img class="shop-box__item-top" src="dist/img/panda.png" alt="nike dunk low">
                     <div class="shop-box__item-bottom">
@@ -70,7 +81,7 @@
                 </a>
             </div>
             <div class="shop-box__shoes">
-                <div class="shop-box__heart"></div>
+                <div class="shop-box__heart cacao-wow"></div>
                 <a class="shop-box__item" href="cacao-wow.html">
                     <img class="shop-box__item-top" src="dist/img/cacao.png" alt="nike dunk low">
                     <div class="shop-box__item-bottom">
@@ -82,7 +93,7 @@
                 </a>
             </div>
             <div class="shop-box__shoes">
-                <div class="shop-box__heart"></div>
+                <div class="shop-box__heart university-red"></div>
                 <a class="shop-box__item" href="university-red.html">
                     <img class="shop-box__item-top" src="dist/img/university-red.png" alt="nike dunk low">
                     <div class="shop-box__item-bottom">
@@ -125,7 +136,8 @@
         <p class="footer-bottom__text">© <span class="footer-bottom__year">2024</span> | SneakersHub.pl</p>
     </div>
 </footer>
-    <script src="dist/js/index.min.js"></script>
+    <script src="dist/js/shoes.min.js"></script>
+    <script src="dist/js/footer.min.js"></script>
 </body>
 
 </html>
