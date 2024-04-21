@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel | SneakersHub.pl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav' -->
+    <header class="panel">
+        <button class="panel-btn">
+            <div class="panel-btn__bars"></div>
+        </button>
+        <div class="panel-left">
+            <ul class="panel-left__list">
+                <li class="panel-left__list-item"><a
+                        class="panel-left__list-item-style " href="panel-admina.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-house"></div> Pulpit
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="zamowienia-admina.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-shoppingbag "></div>
+                        Zamówienia
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style panel-left__list-item-style--active3" href="konta-admina.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-account"></div>Konta
+                    </a></li>
+                <li class="panel-left__list-item"><a class="panel-left__list-item-style" href="index.html">
+                        <div class="panel-left__list-item--icon panel-left__list-item--icon-arrow"></div>Wyloguj się
+                    </a></li>
+            </ul>
+        </div>
+        <div class="panel-right">
+            <h2 class="panel-right__title">Pulpit</h2>
+        </div>
+    </header>
+    <!-- @include 'footer' -->
+    <script src="dist/js/panel.min.js"></script>
+    <script src="dist/js/footer.min.js"></script>
+    <script src="dist/js/account.min.js"></script>
+    <script src="dist/js/index.min.js"></script>
+</body>
+
+</html>
