@@ -191,7 +191,7 @@ body {
 	position: relative;
 	padding: 1.5em 2em;
 	height: 65vh;
-	background-image: url(../../dist/img/gautier-salles-CPFV7QS3_Sg-unsplash.jpg);
+	background-image: url(../../src/img/baner-small.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 50%;
@@ -1621,6 +1621,7 @@ body {
 	}
 	.header {
 		padding: 1.5em 4em;
+		background-image: url(../../src/img/baner-big.jpg);
 		&-box {
 			align-items: flex-start;
 		}
