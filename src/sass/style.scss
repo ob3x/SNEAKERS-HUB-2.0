@@ -1421,6 +1421,7 @@ body {
 		}
 		&__icon {
 			background-image: url(../../src/img/svg/arrow-down-white.svg);
+			background-repeat: no-repeat;
 			width: 2.5em;
 			height: 2.5em;
 			transition: transform 0.5s ease;
@@ -1462,13 +1463,12 @@ body {
 			}
 		}
 	}
-}
-
-.faq-active .faq-answers {
-	max-height: 30em;
-}
-.faq-active .faq-questions__icon {
-	transform: rotate(180deg);
+	&-active .faq-answers {
+		max-height: 30em;
+	}
+	&-active .faq-questions__icon {
+		transform: rotate(180deg);
+	}
 }
 
 .error404 {
