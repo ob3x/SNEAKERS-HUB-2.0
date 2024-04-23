@@ -13,5 +13,6 @@ const heartPopup = () => {
 	});
 };
 
+
 heartBtn.addEventListener('click', heartPopup);
 heartBtnX.addEventListener('click', heartPopup);

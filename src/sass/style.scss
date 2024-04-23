@@ -47,6 +47,7 @@ body {
 			&-style {
 				position: relative;
 				color: $black;
+				cursor: pointer;
 				&--number {
 					position: absolute;
 					bottom: -0.1em;
@@ -102,13 +103,16 @@ body {
 	position: fixed;
 	top: 0;
 	right: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	padding: 3em 2em;
 	background-color: rgba(255, 255, 255, 0.9);
 	transform: translateX(100%);
 	transition: transform 0.3s;
 	z-index: 10000;
+	&-active {
+		transform: translateX(0);
+	}
 	&-title {
 		display: flex;
 		justify-content: space-between;
@@ -173,9 +177,6 @@ body {
 	}
 }
 
-.menu-active {
-	transform: translate(0);
-}
 .overlay {
 	position: fixed;
 	top: 0;
@@ -184,7 +185,6 @@ body {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 1001;
-	overflow-y: hidden;
 }
 
 .header {
@@ -1373,10 +1373,69 @@ body {
 		letter-spacing: 0.05em;
 		color: $white;
 		&__style {
+			position: relative;
 			color: $white;
+			transition: color 0.3s;
 			cursor: pointer;
+			&::after {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 0.1em;
+				background-color: $white;
+				transition: height 0.3s;
+				content: '';
+				z-index: -1;
+			}
+			&:hover {
+				color: $main-color;
+				&::after {
+					height: 100%;
+				}
+			}
 		}
 	}
+}
+
+.faq {
+	padding: 6em 0.5em;
+	&-box {
+		margin-top: 2em;
+		max-width: 80em;
+	}
+	&-item {
+		margin-top: 2em;
+		padding: 1em 2em;
+		background-color: $main-color;
+		color: $white;
+		cursor: pointer;
+	}
+	&-questions {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__title {
+			font-size: 1.8rem;
+		}
+		&__icon {
+			background-image: url(../../src/img/svg/arrow-down-white.svg);
+			width: 2.5em;
+			height: 2.5em;
+		}
+	}
+	&-answers {
+		max-height: 0;
+		overflow: hidden;
+		&__text {
+			padding: 1em 0;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.faq.faq-active .answer {
+	max-height: 30em;
 }
 
 .error404 {
