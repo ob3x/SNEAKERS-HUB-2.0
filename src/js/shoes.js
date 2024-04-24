@@ -35,7 +35,7 @@ const greyFogFun = () => {
 		}
 		greyFogs.innerHTML = ` <a href="grey-fog.html" class="menu-item__link">
         <div class="menu-item__left">
-        <img src="dist/img/grey-fog.png" alt="grey-fog" class="menu-item__img">
+        <img src="dist/img/grey-fog.jpg" alt="grey-fog" class="menu-item__img">
         <div class="menu-item__left-box">
         <p class="menu-item__text">Nike Dunk Low "Grey Fog"</p>
             <p class="menu-item__price">449 zł</p>
@@ -62,7 +62,7 @@ const pandaFun = () => {
 		}
 		panda.innerHTML = ` <a href="panda.html" class="menu-item__link">
             <div class="menu-item__left">
-            <img src="dist/img/panda.png" alt="panda" class="menu-item__img">
+            <img src="dist/img/panda.jpg" alt="panda" class="menu-item__img">
             <div class="menu-item__left-box">
             <p class="menu-item__text">Nike Dunk Low "Panda"</p>
             <p class="menu-item__price">449 zł</p>
@@ -89,7 +89,7 @@ const cacaoWowFun = () => {
 		}
 		cacaoWow.innerHTML = ` <a href="cacao-wow.html" class="menu-item__link">
             <div class="menu-item__left">
-            <img src="dist/img/cacao.png" alt="cacao-wow" class="menu-item__img">
+            <img src="dist/img/cacao.jpg" alt="cacao-wow" class="menu-item__img">
             <div class="menu-item__left-box">
             <p class="menu-item__text">Nike Dunk Low "Cacao Wow"</p>
             <p class="menu-item__price">449 zł</p>
@@ -117,7 +117,7 @@ const universityRedFun = () => {
 
 		universityRed.innerHTML = ` <a href="university-red.html" class="menu-item__link">
             <div class="menu-item__left">
-            <img src="dist/img/university-red.png" alt="University-Red" class="menu-item__img">
+            <img src="dist/img/university-red.jpg" alt="University-Red" class="menu-item__img">
             <div class="menu-item__left-box">
             <p class="menu-item__text">Nike Dunk Low "University Red"</p>
             <p class="menu-item__price">459 zł</p>
