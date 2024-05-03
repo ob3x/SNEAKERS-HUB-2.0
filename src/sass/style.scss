@@ -1441,7 +1441,7 @@ body {
 				color: $white;
 				text-decoration: none;
 				text-transform: uppercase;
-				transition: color .3s;
+				transition: color 0.3s;
 				z-index: 1;
 				&::after {
 					position: absolute;
@@ -1472,7 +1472,38 @@ body {
 }
 
 .private-polity {
-	padding: 6em .5em;
+	padding: 6em 0.5em;
+}
+
+.firstSection__text {
+	margin: 1.5em 0 3em;
+	color: $grey;
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.rules-box {
+	padding: 0 2em;
+	&__title {
+		margin: 1em 0;
+		color: $main-color;
+		font-size: 2.2rem;
+		text-align: center;
+	}
+	&__text {
+		color: $grey;
+		font-size: 1.4rem;
+		line-height: 2em;
+		&-titles {
+			font-weight: bold;
+			margin-left: 1em;
+		}
+	}
+}
+
+.contact {
+	scroll-margin-top: 2.5em;
 }
 
 .error404 {
@@ -1822,6 +1853,15 @@ body {
 		}
 		&-text {
 			font-size: 1.3rem;
+		}
+	}
+	.rules-box {
+		&__title {
+			text-align: left;
+			font-size: 3rem;
+		}
+		&__text {
+			font-size: 1.7rem;
 		}
 	}
 }
